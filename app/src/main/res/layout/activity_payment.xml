@@ -8,35 +8,35 @@
     tools:context="com.bignerdranch.android.personaltrainerportal.PaymentActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/pmtAmt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Payment Amount"
         android:textSize="24sp"
         tools:layout_constraintTop_creator="1"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="16dp"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginLeft="16dp"/>
 
     <EditText
-        android:id="@+id/pmtAmount"
+        android:id="@+id/ETamount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="amt"
         android:inputType="numberDecimal"
         android:text="$"
-        android:hint="Amount"
         android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/pmtAmt"
+        app:layout_constraintLeft_toRightOf="@+id/pmtAmt"
         tools:layout_constraintBaseline_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toRightOf="@+id/textView2"/>
+        tools:layout_constraintLeft_creator="1"/>
 
     <EditText
-        android:id="@+id/cardName"
+        android:id="@+id/ETcardName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -48,15 +48,16 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="37dp"
-        app:layout_constraintTop_toBottomOf="@+id/pmtAmount"
+        android:layout_marginTop="44dp"
+        app:layout_constraintTop_toBottomOf="@+id/ETamount"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"/>
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="1.0"/>
 
     <EditText
-        android:id="@+id/cardNumber"
+        android:id="@+id/ETcardNumber"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -69,63 +70,85 @@
         android:layout_marginEnd="8dp"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="32dp"
-        app:layout_constraintTop_toBottomOf="@+id/cardName"
+        app:layout_constraintTop_toBottomOf="@+id/ETcardName"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"/>
 
     <EditText
-        android:id="@+id/exp"
-        android:layout_width="184dp"
-        android:layout_height="55dp"
+        android:id="@+id/ETexp"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="72dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="67dp"
         android:ems="10"
         android:hint="Exp"
         android:inputType="date"
         android:textSize="24sp"
-        android:layout_marginStart="16dp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/cvv"
-        tools:layout_constraintBaseline_creator="1"
-        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/ETcvv"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="16dp"/>
+        app:layout_constraintRight_toRightOf="@+id/ETcvv"
+        app:layout_constraintTop_toTopOf="@+id/ETcardNumber"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"/>
 
     <EditText
-        android:id="@+id/cvv"
-        android:layout_width="136dp"
-        android:layout_height="53dp"
+        android:id="@+id/ETcvv"
+        android:layout_width="268dp"
+        android:layout_height="46dp"
         android:ems="10"
         android:hint="CVV"
         android:inputType="number"
         android:textSize="24sp"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="28dp"
-        app:layout_constraintTop_toBottomOf="@+id/cardNumber"
-        android:layout_marginRight="16dp"/>
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/ETemail"
+        android:layout_marginStart="8dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="8dp"/>
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/ETemail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Email address"
         android:inputType="textEmailAddress"
         android:textSize="24sp"
-        tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
         android:layout_marginStart="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginEnd="8dp"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="93dp"
         tools:layout_constraintLeft_creator="1"
         android:layout_marginBottom="77dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/cvv"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light"
+        android:text="Submit"
+        android:textSize="18sp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="9dp"
+        app:layout_constraintTop_toBottomOf="@+id/ETemail"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+
 </android.support.constraint.ConstraintLayout>
