@@ -37,6 +37,10 @@
         <activity android:name=".ClientList"
             android:parentActivityName=".PortalActivity">
         </activity>
+        <activity android:name=".Sessions"
+            android:parentActivityName=".PortalActivity">
+        </activity>
+
     </application>
 
 </manifest>
