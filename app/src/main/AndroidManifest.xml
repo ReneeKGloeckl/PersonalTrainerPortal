@@ -31,16 +31,18 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".PaymentActivity"
+        <activity
+            android:name=".PaymentActivity"
             android:parentActivityName=".PortalActivity">
         </activity>
-        <activity android:name=".ClientList"
+        <activity
+            android:name=".ClientList"
             android:parentActivityName=".PortalActivity">
         </activity>
-        <activity android:name=".Sessions"
-            android:parentActivityName=".PortalActivity">
+        <activity
+            android:name=".ScheduleActivity"
+            android:parentActivityName=".PortalActivity" >
         </activity>
-
     </application>
 
 </manifest>

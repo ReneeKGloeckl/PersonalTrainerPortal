@@ -62,14 +62,15 @@
         android:textSize="18sp"/>
 
     <Button
-        android:id="@+id/btnSessions"
+        android:id="@+id/btnSchedule"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/btnClist"
         android:layout_alignLeft="@+id/btnPayment"
         android:layout_alignStart="@+id/btnPayment"
         android:background="@android:color/holo_blue_light"
-        android:text="Sessions"/>
+        android:text="Schedule"
+        android:textSize="18sp"/>
 
 
 </RelativeLayout>
