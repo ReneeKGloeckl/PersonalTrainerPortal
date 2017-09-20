@@ -7,4 +7,19 @@
     android:layout_height="match_parent"
     tools:context="com.bignerdranch.android.personaltrainerportal.ScheduleActivity">
 
+    <TextView
+        android:id="@+id/tvSessionSchd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Sessions Scheduled"
+        android:textAlignment="viewStart"
+        android:gravity="start"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
 </android.support.constraint.ConstraintLayout>
